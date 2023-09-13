@@ -51,9 +51,9 @@ Riešenie musí spĺňať nasledujúce podmienky:
 
 ![Hlavička tabuľky pri pohnutí posuvníkom](md_images/zadanie-hlavicka.png)
 
-## Ako nájsť branch môjho cvičnia?
-Pokiaľ sa chcete dostat k riešeniu z cvičenia je potrebné otvoriť si príslušnú _branch_, ktorej nazov sa sklada
+## Ako nájsť branch môjho cvičenia?
+Pokiaľ sa chcete dostat k riešeniu z cvičenia je potrebné otvoriť si príslušnú _branch_, ktorej nazov sa skladá následovne:
 
 __MIESTNOST__ + "-" + __HODINA ZAČIATKU__ + "-" + __DEN__
 
-Ak teda navštevujete cvičenie pondelok o 08:00 v RA323, tak sa branch bude volat: __RA323-08-PON__
+Ak teda navštevujete cvičenie pondelok o 08:00 v RA323, tak sa branch bude volať: __RA323-08-PON__
