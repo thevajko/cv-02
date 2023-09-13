@@ -52,7 +52,7 @@ Riešenie musí spĺňať nasledujúce podmienky:
 ![Hlavička tabuľky pri pohnutí posuvníkom](md_images/zadanie-hlavicka.png)
 
 ## Ako nájsť branch môjho cvičenia?
-Pokiaľ sa chcete dostat k riešeniu z cvičenia je potrebné otvoriť si príslušnú _branch_, ktorej nazov sa skladá následovne:
+Pokiaľ sa chcete dostať k riešeniu z cvičenia je potrebné otvoriť si príslušnú _branch_, ktorej názov sa skladá:
 
 __MIESTNOST__ + "-" + __HODINA ZAČIATKU__ + "-" + __DEN__
 
