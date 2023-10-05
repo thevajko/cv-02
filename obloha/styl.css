@@ -2,3 +2,10 @@ body {
     background-image: url("img/sky.jpg");
     background-size: cover;
 }
+
+.sun {
+    background-image: url("img/sun.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
