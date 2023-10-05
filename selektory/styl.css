@@ -1,0 +1,22 @@
+.data, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+th:first-letter {
+    color: yellow;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+td:nth-child(2) {
+    text-transform: uppercase;
+}
