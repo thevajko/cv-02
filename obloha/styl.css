@@ -9,3 +9,32 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.bird {
+    background-image: url("img/bird.png");
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.flip {
+    transform: scaleX(-1);
+}
