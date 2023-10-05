@@ -15,7 +15,7 @@ Riešenie musí spĺňať nasledujúce podmienky:
 - Obrázok oblohy bude roztiahnutý na celé okno prehliadača.
 - Uprostred neho bude obrázok slnka a v každom rohu obrázok vtáčika.
 - Pri zmene veľkosti okna prehliadača musia obrázky zostať na svojom mieste (slnko v strede a vtáčiky na okrajoch).
-- Všetky vtáčiky budú otočené smerom k slnku.
+- Všetky vtáčiky budú otočené smerom k slnku...
 
 ## Úloha č. 2:
 
