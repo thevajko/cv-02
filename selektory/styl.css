@@ -1,0 +1,24 @@
+.data {
+    border-collapse: collapse;
+}
+
+.data td, .data th {
+    border: 1px solid;
+}
+
+.data th {
+    color: white;
+    background-color: green;
+}
+
+.data th::first-letter {
+    color: yellow;
+}
+
+.data tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.data td:nth-child(2) {
+    text-transform: uppercase;
+}
