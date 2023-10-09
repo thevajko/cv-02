@@ -18,4 +18,21 @@ body {
     height: 150px;
     background-size: contain;
     background-repeat: no-repeat;
+    position: absolute;
+}
+
+.top {
+    top: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.bottom {
+    bottom: 0;
 }
