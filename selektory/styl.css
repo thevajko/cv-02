@@ -26,3 +26,11 @@
 .data tr:hover {
     background-color: gray;
 }
+
+.data a[href^="https://"] {
+    color: green;
+}
+
+.data a[href^="http://"] {
+    color: red;
+}
