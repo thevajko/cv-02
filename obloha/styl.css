@@ -21,6 +21,10 @@ body {
     position: absolute;
 }
 
+.bird.left {
+    transform: scaleX(-1);
+}
+
 .top {
     top: 0;
 }
