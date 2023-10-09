@@ -19,3 +19,7 @@
 .data  tr:nth-child(odd) {
     background-color: #eaeaea;
 }
+
+td:nth-child(2) {
+    text-transform: uppercase;
+}
