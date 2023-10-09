@@ -6,6 +6,8 @@ Toto cvičenie precvičuje základné operácie s _CSS_, _CSS possition_ a _CSS 
 
 ## Úloha č. 1
 
+Cvičenie pondelok 8:00
+
 Upravte HTML v súbore `obloha\index.html` tak, aby vyzeral ako na nasledujúcom obrázku:
 
 ![Vzhľad výsledného riešenia](md_images/img.png)
