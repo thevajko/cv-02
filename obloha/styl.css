@@ -1,0 +1,21 @@
+body {
+    background-image: url(img/sky.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sun {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bird {
+    background-image: url(img/bird.png);
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
