@@ -34,3 +34,11 @@
 .data a[href^="http://"] {
     color: red;
 }
+
+.data td a:not([href^="http://"]):not([href^="https://"]) {
+    color: blue;
+}
+
+.data a[href$=".pdf"]::before {
+    content: "(PDF) ";
+}
