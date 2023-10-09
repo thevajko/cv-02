@@ -11,3 +11,7 @@ th {
 th::first-letter {
     color: yellow;
 }
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
