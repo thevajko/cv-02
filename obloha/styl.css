@@ -2,3 +2,9 @@ body {
     background-image: url("img/sky.jpg");
     background-size: cover;
 }
+
+#img-pravo-dolu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
