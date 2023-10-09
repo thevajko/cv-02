@@ -3,8 +3,24 @@ body {
     background-size: cover;
 }
 
+#img-lavo-hore {
+    position: absolute;
+    transform: scaleX(-1);
+}
+#img-pravo-hore {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 #img-pravo-dolu {
     position: absolute;
     bottom: 0;
     right: 0;
 }
+#img-lavo-dolu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(-1);
+}
+
