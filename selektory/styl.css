@@ -15,3 +15,7 @@
 .data th::first-letter {
     color: yellow;
 }
+
+.data  tr:nth-child(odd) {
+    background-color: #eaeaea;
+}
