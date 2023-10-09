@@ -5,3 +5,13 @@
     border-collapse: collapse;
 }
 
+.data th {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: green;
+}
+
+.data th::first-letter {
+    color: yellow;
+}
