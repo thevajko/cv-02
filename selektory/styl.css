@@ -22,3 +22,7 @@
 .data td:nth-child(2) {
     text-transform: uppercase;
 }
+
+.data tr:hover {
+    background-color: gray;
+}
