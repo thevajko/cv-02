@@ -19,3 +19,23 @@ tr:nth-child(odd) {
 td:nth-child(2) {
     text-transform: uppercase;
 }
+
+tr:hover {
+    background-color: grey;
+}
+
+a[href^="https://"] {
+    color: green;
+}
+
+a[href^="http://"] {
+    color: red;
+}
+
+a:not([href^="http://"]):not([href^="https://"]) {
+    color: blue;
+}
+
+a[href$="pdf"]::after {
+    content: "(pdf)";
+}
