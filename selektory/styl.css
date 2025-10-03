@@ -1,0 +1,10 @@
+/* Nastylovanie tabuľky s čiernym rámčekom medzi bunkami a okolo celej tabuľky, všetky rámiky majú 1px */
+table.data {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table.data th, table.data td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
