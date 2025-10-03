@@ -8,3 +8,69 @@ table.data th, table.data td {
     padding: 8px;
 }
 
+/* Nastylovanie záhlavia tabuľky podľa požiadaviek */
+table.data th {
+    background-color: green;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+table.data th::first-letter {
+    color: yellow;
+}
+
+/* Nepárne riadky tabuľky majú svetlosivé pozadie */
+table.data tr:nth-child(odd):not(:first-child) {
+    background-color: #e0e0e0;
+}
+/* Ostatné bunky v riadku na hover tmavšou sivou, čísla modré podľa zadania */
+table.data tr:hover td {
+    background-color: #bdbdbd;
+}
+table.data tr:hover td:nth-child(4),
+table.data tr:hover td:nth-child(5),
+table.data tr:hover td:nth-child(6) {
+    background-color: #3fa9f5;
+}
+/* Čísla: na hover bunky zelené, ďalšie za ním žlté, okrem odkazu */
+table.data tr:hover td:nth-child(4):hover {
+    background-color: #4caf50;
+}
+table.data tr:hover td:nth-child(5):hover {
+    background-color: #4caf50;
+}
+table.data tr:hover td:nth-child(6):hover {
+    background-color: #4caf50;
+}
+table.data tr:hover td:nth-child(4):hover ~ td:nth-child(5) {
+    background-color: #fff700;
+}
+table.data tr:hover td:nth-child(5):hover ~ td:nth-child(6) {
+    background-color: #fff700;
+}
+/* Skryť stĺpec Výsledok (7. stĺpec) */
+table.data th:nth-child(7),
+table.data td:nth-child(7) {
+    display: none;
+}
+/* Odkazy v stĺpci Link podľa typu */
+table.data td:nth-child(8) a[href^="https://"] {
+    color: #009900;
+}
+table.data td:nth-child(8) a[href^="http://"] {
+    color: #d10000;
+}
+table.data td:nth-child(8) a[href^="."] {
+    color: #0000ff;
+}
+table.data td:nth-child(8) a[href$=".pdf"]::after {
+    content: "(PDF)";
+    color: inherit;
+    margin-left: 2px;
+}
+/* Hlavička tabuľky stále viditeľná pri scrollovaní */
+table.data th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
