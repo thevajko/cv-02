@@ -31,6 +31,7 @@ table.data tr:hover td:nth-child(4),
 table.data tr:hover td:nth-child(5),
 table.data tr:hover td:nth-child(6) {
     background-color: #3fa9f5;
+    text-align: center;
 }
 /* Čísla: na hover bunky zelené, ďalšie za ním žlté, okrem odkazu */
 table.data tr:hover td:nth-child(4):hover {
@@ -47,6 +48,13 @@ table.data tr:hover td:nth-child(4):hover ~ td:nth-child(5) {
 }
 table.data tr:hover td:nth-child(5):hover ~ td:nth-child(6) {
     background-color: #fff700;
+}
+/* Text v stĺpci Meno červený, ak nie je hover na bunke Meno */
+table.data tr:hover td:nth-child(1) {
+    color: red;
+}
+table.data tr:hover td:nth-child(1):hover {
+    color: black;
 }
 /* Skryť stĺpec Výsledok (7. stĺpec) */
 table.data th:nth-child(7),
@@ -73,4 +81,14 @@ table.data th {
     position: sticky;
     top: 0;
     z-index: 2;
+}
+/* Stĺpec Priezvisko veľkými písmenami */
+table.data td:nth-child(2) {
+    text-transform: uppercase;
+}
+/* Stĺpce Číslo 1, 2, 3 budú vždy centrované */
+table.data td:nth-child(4),
+table.data td:nth-child(5),
+table.data td:nth-child(6) {
+    text-align: center;
 }
