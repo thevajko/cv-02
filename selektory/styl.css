@@ -17,3 +17,59 @@ th {
 th::first-letter {
     color: yellow;
 }
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+td:nth-child(2) {
+    text-transform: uppercase;
+}
+
+/* Zarovnanie na stred pre bunky s číslami */
+td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+    text-align: center;
+    transition: background 0.5s;
+}
+
+
+/* Hover na riadok - špeciálne správanie pre bunky s číslami */
+tbody tr:hover td:nth-child(4),
+tbody tr:hover td:nth-child(5),
+tbody tr:hover td:nth-child(6) {
+    background-color: #3399ff; /* modré pozadie na hover riadku, prepíše sa nižšie ak je hover na bunke */
+}
+
+/* Hover na konkrétnu bunku s číslom 1 */
+tbody tr:hover td:nth-child(4):hover {
+    background-color: #2ecc40; /* zelená pre aktívnu bunku */
+}
+tbody tr:hover td:nth-child(4):hover ~ td:nth-child(5),
+tbody tr:hover td:nth-child(4):hover ~ td:nth-child(6) {
+    background-color: #ffe066; /* žltá pre bunky za aktívnou */
+}
+
+/* Hover na konkrétnu bunku s číslom 2 */
+tbody tr:hover td:nth-child(5):hover {
+    background-color: #2ecc40;
+}
+tbody tr:hover td:nth-child(5):hover ~ td:nth-child(6) {
+    background-color: #ffe066;
+}
+
+/* Hover na konkrétnu bunku s číslom 3 */
+tbody tr:hover td:nth-child(6):hover {
+    background-color: #2ecc40;
+}
+
+tr:hover {
+    background-color: gray;
+}
+
+tr:hover td:first-child:not(:hover) {
+    color: red;
+}
+
+a[href$=".pdf"]::after {
+    content: " (PDF)";
+}
