@@ -7,5 +7,56 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Prispôsobte veľkosť podľa potreby */
+    height: auto;
+    z-index: 1;
+    animation: rotate-sun 10s linear infinite;
+}
+
+@keyframes rotate-sun {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.bird {
+    position: absolute;
+    width: 120px; /* Prispôsobte veľkosť podľa potreby */
+    height: auto;
+    z-index: 2;
+}
+
+.bird-tl {
+    top: 0;
+    left: 0;
+}
+
+.bird-tr {
+    top: 0;
+    right: 0;
+}
+
+.bird-bl {
+    bottom: 0;
+    left: 0;
+}
+
+.bird-br {
+    bottom: 0;
+    right: 0;
+}
+
+.bird-bl, .bird-tl {
+    transform: scaleX(-1); /* Otočenie vtáka na ľavej strane */
+}
