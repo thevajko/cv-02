@@ -15,6 +15,9 @@ table.data th {
     color: white;
     font-weight: bold;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 /* Prvé písmeno v záhlaví bude žlté */
@@ -75,6 +78,30 @@ table.data td:nth-child(5):hover ~ td:nth-child(6) {
 table.data td:nth-child(6):hover {
     background-color: green;
     color: white;
+}
+
+/* Štýly pre odkazy v stĺpci Link podľa typu */
+table.data td:nth-child(8) a[href^="https://"] {
+    color: green;
+}
+table.data td:nth-child(8) a[href^="http://"] {
+    color: red;
+}
+table.data td:nth-child(8) a[href]:not([href^="http"]):not([href^="https"]){
+    color: blue;
+}
+
+/* Pridanie (PDF) za text odkazu, ak končí na .pdf */
+table.data td:nth-child(8) a[href$=".pdf"]::after {
+    content: " (PDF)";
+    color: inherit;
+    font-weight: normal;
+}
+
+/* Pre prípad, že je potrebné scrollovať tabuľku, nastavíme max-height a overflow na table wrapper */
+.table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 /* Bunku s odkazom nemeníme (8. stĺpec) */
