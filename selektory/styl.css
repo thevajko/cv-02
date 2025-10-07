@@ -31,3 +31,50 @@ table.data tr:nth-child(odd) {
 table.data td:nth-child(2), table.data th:nth-child(2) {
     text-transform: uppercase;
 }
+
+/* Celý riadok má sivé pozadie pri hover */
+table.data tr:hover {
+    background-color: #cccccc;
+}
+
+/* Text v stĺpci Meno je červený pri hover riadku, okrem hover bunky */
+table.data tr:hover td:first-child {
+    color: red;
+}
+table.data td:first-child:hover {
+    color: black;
+}
+
+/* Stĺpce Číslo 1 až Číslo 3: zarovnanie na stred a modré pozadie */
+table.data td:nth-child(4),
+table.data td:nth-child(5),
+table.data td:nth-child(6) {
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+/* Pri hover na bunke Číslo 1 až Číslo 3: zelené pozadie pre hover bunku, žlté pre bunky za ňou */
+table.data td:nth-child(4):hover {
+    background-color: green;
+    color: white;
+}
+table.data td:nth-child(4):hover ~ td:nth-child(5),
+table.data td:nth-child(4):hover ~ td:nth-child(6) {
+    background-color: yellow;
+    color: black;
+}
+table.data td:nth-child(5):hover {
+    background-color: green;
+    color: white;
+}
+table.data td:nth-child(5):hover ~ td:nth-child(6) {
+    background-color: yellow;
+    color: black;
+}
+table.data td:nth-child(6):hover {
+    background-color: green;
+    color: white;
+}
+
+/* Bunku s odkazom nemeníme (8. stĺpec) */
