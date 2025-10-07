@@ -17,3 +17,36 @@ body {
     height: auto;
     z-index: 1;
 }
+
+/* Všeobecné nastavenie pre vtáky v rohoch */
+.bird {
+    position: absolute;
+    width: 8vw;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+/* Vľavo hore - zobák doprava (otočený horizontálne) */
+.bird-tl {
+    top: 0;
+    left: 0;
+    transform: scaleX(-1) rotate(-15deg);
+}
+/* Vpravo hore - zobák dole (otočený o 90°) */
+.bird-tr {
+    top: 0;
+    right: 0;
+    transform: rotate(75deg);
+}
+/* Vľavo dole - zobák hore (otočený o -90°) */
+.bird-bl {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-75deg);
+}
+/* Vpravo dole - zobák doľava (pôvodná orientácia) */
+.bird-br {
+    bottom: 0;
+    right: 0;
+    transform: none;
+}
