@@ -56,3 +56,5 @@ Pokiaľ sa chcete dostať k riešeniu z cvičenia je potrebné otvoriť si prís
 __MIESTNOST__ + "-" + __HODINA ZAČIATKU__ + "-" + __DEN__
 
 Ak teda navštevujete cvičenie pondelok o 08:00 v RA323, tak sa branch bude volať: __RA323-08-PON__
+
+test
