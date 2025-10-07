@@ -1,4 +1,4 @@
-# VAII Cvičenie 02
+# VAII Cvičenie 02 test
 
 Momentálne je otvorená branch __MAIN__, ktorá obsahuje _štartér_. Riešenie obsahuje branch  __SOLUTION__.
 
