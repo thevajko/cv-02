@@ -1,0 +1,23 @@
+/* Tenký čierny rámik pre tabuľku */
+table.data {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Tenký čierny rámik pre bunky tabuľky */
+table.data th, table.data td {
+    border: 1px solid black;
+}
+
+/* Štýl záhlavia tabuľky */
+table.data th {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Prvé písmeno v záhlaví bude žlté */
+table.data th::first-letter {
+    color: yellow;
+}
