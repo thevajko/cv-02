@@ -78,3 +78,9 @@ table.data td:nth-child(6):hover {
 }
 
 /* Bunku s odkazom nemeníme (8. stĺpec) */
+
+/* Skrytie stĺpca Výsledok (7. stĺpec) */
+table.data th:nth-child(7),
+table.data td:nth-child(7) {
+    display: none;
+}
