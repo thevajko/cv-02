@@ -3,5 +3,51 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
 }
 
+.sun {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 30vw;
+    height: auto;
+    display: block;
+    animation: rotate-sun 5s linear infinite;
+}
+
+@keyframes rotate-sun {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.bird {
+    position: absolute;
+}
+.bird-tl,
+.bird-bl {
+    transform: scaleX(-1);
+}
+.bird-tl {
+    top: 0;
+    left: 0;
+}
+.bird-tr {
+    top: 0;
+    right: 0;
+}
+.bird-bl {
+    bottom: 0;
+    left: 0;
+}
+.bird-br {
+    bottom: 0;
+    right: 0;
+}
