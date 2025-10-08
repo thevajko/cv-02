@@ -5,3 +5,29 @@ table {
 td, th {
     border: 1px solid black;
 }
+
+th {
+    background-color: #62972a;
+    color: white;
+    text-align: center;
+}
+
+th::first-letter {
+    color: yellow;
+}
+
+tr:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+td:nth-child(2) {
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #a0a0a0;
+}
+
+tr:hover td:nth-child(1):not(:hover) {
+   color: red;
+}
